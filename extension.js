@@ -48,7 +48,7 @@ else { log('Missing required core component Settings, expect trouble…'); setti
 separator1 = new PopupMenu.PopupSeparatorMenuItem;
 Menu.addMenuItem(separator1);
 
-logout = new PopupMenu.PopupImageMenuItem(_('Logout'), 'system-log-out-symbolic');
+logout = new PopupMenu.PopupImageMenuItem(_('Logout'), 'system-logout-symbolic');
 logout.connect('activate', () => { this._systemActions.activateLogout(); });
 Menu.addMenuItem(logout);
 this._systemActions.bind_property('can-logout', logout, 'visible', bindFlags);
